@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    html,body{
+        width:100%;
+        height:100%;
+    }
+    nav{
+        width:100%;
+        height:8%;
+        font-family: georgia;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid black;
+    }
+    nav ul:nth-child(2) {
+        display: flex;
+        gap:2vw
+    }
+nav ul li{
+    list-style: none;
+}
+nav ul li:nth-child(1){
+    font-weight:700;
+}
+#signUp{
+    background-color: royalblue;
+    border-radius: 8%;
+    padding:1vw 2vw;
+    color:white;
+
+}
+#signIn{
+    background-color: rgb(132, 161, 248);
+    border-radius: 8%;
+    padding:1vw 2vw;
+    color:white;
+
+}
+div.img{
+    width:100%;
+    height: calc(100%-8%);
+}
+img{
+    width:100%;
+    height:100%;
+
+}
+div#content{
+    width:100%;
+    height:30%;
+    font-size: xxx-large;
+    font-weight:800;
+
+}
+span{
+    color: hotpink;
+}
+p span:nth-child(1){
+    color:lightskyblue;
+
+}
+nav i{
+    font-size: xx-large;
+    border:none;
+    
+}
+a{
+    text-decoration: none;
+}
+nav a:nth-child(2){
+    color:red;
+
+}
+nav a:nth-child(3){
+    color:hotpink;
+}
+div#follow{
+    width:100%;
+    height:50%;
+    font-size: x-large;
+    font-weight: 700;
+    font-family:georgia;
+}
+div#come{
+    width:100%;
+    height:100%;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    font-size: xxx-large;
+}
+#come img{
+    width:50%;
+    height:100%;
+    box-shadow: 10px 10px  rgb(249, 149, 112);
+}
+.content2{
+    background:#52ab98 ;
+    color:white;
+    width:40%;
+    border-radius:5%;
+    padding:1vw 8vh;
+    box-shadow: 0 0 7px black;
+
+
+    ;
+}
+#follow span:nth-child(1){
+    color:rgb(242, 110, 136);
+}
+div.final{
+    width:100%;
+    height:100%;
+
+}
+.final p {
+    font-size: xxx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    
+     
+}
+.footer i{
+    width:100%;
+    height:10%;
+    display: block;
+    font-size: x-large;
+    font-style: italic;
+}
+@media (max-width:600px) {
+    div#content{
+    width:100%;
+    height:30%;
+    font-size: xx-large;
+    font-weight:800;
+
+}
+div#come{
+    font-size: x-large;
+    display: block;
+}
+    #come img{
+        width:100%;
+    }
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <i class="ri-gatsby-line"></i>
+            </li>
+        </ul>
+    <ul>
+        <li id="signUp">Sign Up</li>
+        <li id="signIn">Sign In</li>
+    </ul>
+    </nav>
+
+<div class="img">
+    <img src="main.jpg" alt="">
+</div>
+
+<div id="content">
+    Learn Exclusive<span>Video</span> Editing
+    <p>From  <span>Professionals</span></p>
+</div>
+
+<div id="come">
+    <div class="content2">Come And <br>Join</div>
+    <img src="girl.jpg" alt="">
+</div>
+
+<div id="follow">
+    Follow Unique Rs Rohit on <span>Youtube</span> And <span>Ig</span>
+</div>
+
+
+<nav>
+<i class="ri-facebook-fill"></i>
+<a href="https://youtu.be/9u74N_JTm6I?si=ZrJrRX7mWFuMduWS">
+    <i class="ri-youtube-fill"></i>
+</a>
+
+<a href="https://instagram.com/rs_rohit_65?igshid=MzRIODBiNWFIZA==">
+<i class="ri-instagram-line"></i>
+</a>
+</nav>
+
+<div class="final">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L30,176C60,192,120,224,180,213.3C240,203,300,149,360,106.7C420,64,480,32,540,48C600,64,660,128,720,165.3C780,203,840,213,900,181.3C960,149,1020,75,1080,85.3C1140,96,1200,192,1260,208C1320,224,1380,160,1410,128L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    <p>Then</p>
+    <p>What</p>
+    <p>Are</p>
+    <p>You</p>
+    <p>Waiting</p>
+    <p>For!</p>
+</div>
+
+<div class="footer">
+    <i class="ri-mail-line">     rohitkumar@gmail.com</i>
+    <i class="ri-smartphone-line">   +91 8447026493</i>
+</div>
+
+<script>
+gsap.from(".final p",{
+    x:-200,
+    delay:1,
+    stagger:0.9,
+    scrollTrigger:".final p"
+})
+</script>
+
+</body>
+</html>
